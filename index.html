@@ -15,13 +15,13 @@
 
       <select id="city">
         <option value="">Select a city...</option>
-        <option value="current">My current location</option>
-        <option value="Europe/London">London</option>
-        <option value="America/New_York">New York</option>
-        <option value="Pacific/Auckland">Auckland</option>
-        <option value="Europe/Rome/">Rome</option>
-        <option value="Asia/Tokyo">Tokyo</option>
-        <option value="Pacific/Honolulu">Honolulu</option>
+        <option id="current" value="current">My current location</option>
+        <option id="london" value="Europe/London">London</option>
+        <option id="ny" value="America/New_York">New York</option>
+        <option id="auckland" value="Pacific/Auckland">Auckland</option>
+        <option id="rome" value="Europe/Rome/">Rome</option>
+        <option id="dublin" value="Europe/Dublin">Dublin</option>
+        <option id="honolulu" value="Pacific/Honolulu">Honolulu</option>
       </select>
       <div id="cities">
         <div class="city" id="los-angeles">
@@ -31,6 +31,7 @@
           </div>
           <div class="time"></div>
         </div>
+
         <div class="city" id="paris">
           <div>
             <h2>Paris</h2>
@@ -38,9 +39,16 @@
           </div>
           <div class="time"></div>
         </div>
+        <div class="city" id="tokyo">
+          <div>
+            <h2>Tokyo</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
       </div>
       <a href="https://vermillion-moonbeam-94826b.netlify.app/" target="_self"
-        >All cities</a
+        >Return to all cities</a
       >
     </div>
     <footer>

@@ -11,14 +11,32 @@ function updateTime() {
       "h:mm:ss [<small>]A[</samll>]"
     );
   }
+
   //Paris
   let parisElement = document.querySelector("#paris");
-  let parisDateElement = parisElement.querySelector(".date");
-  let parisTimeElement = parisElement.querySelector(".time");
-  let parisTime = moment().tz("Europe/Paris");
+  if (parisElement) {
+    let parisDateElement = parisElement.querySelector(".date");
+    let parisTimeElement = parisElement.querySelector(".time");
+    let parisTime = moment().tz("Europe/Paris");
 
-  parisDateElement.innerHTML = parisTime.format("MMMM Do, YYYY");
-  parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</samll>]");
+    parisDateElement.innerHTML = parisTime.format("MMMM Do, YYYY");
+    parisTimeElement.innerHTML = parisTime.format(
+      "h:mm:ss [<small>]A[</samll>]"
+    );
+  }
+
+  //Tokyo
+  let tokyoElement = document.querySelector("#tokyo");
+  if (tokyoElement) {
+    let tokyoDateElement = tokyoElement.querySelector(".date");
+    let tokyoTimeElement = tokyoElement.querySelector(".time");
+    let tokyoTime = moment().tz("Asia/Tokyo");
+
+    tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do, YYYY");
+    tokyoTimeElement.innerHTML = tokyoTime.format(
+      "h:mm:ss [<small>]A[</samll>]"
+    );
+  }
 }
 function updateCity(event) {
   let cityTimeZone = event.target.value;
