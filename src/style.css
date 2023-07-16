@@ -29,6 +29,7 @@ footer {
   text-align: center;
   font-size: 18px;
   color: white;
+  margin-top: -8px;
 }
 
 footer a {
@@ -41,7 +42,7 @@ strong {
 
 .container {
   max-width: 600px;
-  margin: 36px auto;
+  margin: 42px auto;
   background: white;
   padding: 30px;
   box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 25.5);
